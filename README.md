@@ -4,7 +4,7 @@
 # 运行
 - 下载项目
 ```git
-git clone git@github.com:ScarboroughCoral/SE_Docker.git
+git clone https://github.com/ScarboroughCoral/SE_Docker.git
 ```
 - 在工程目录下运行
 ```bash

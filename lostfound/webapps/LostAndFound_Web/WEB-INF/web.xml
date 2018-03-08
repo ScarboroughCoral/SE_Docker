@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>LostAndFound</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogInController</servlet-name>
+    <servlet-class>controller.LogInController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogInController</servlet-name>
+    <url-pattern>/user/login</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>RegisterController</display-name>
+    <servlet-name>RegisterController</servlet-name>
+    <servlet-class>controller.RegisterController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterController</servlet-name>
+    <url-pattern>/user/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GoodsTypeListServlet</servlet-name>
+    <servlet-class>controller.GoodsTypeListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoodsTypeListServlet</servlet-name>
+    <url-pattern>/getAllGoodsType</url-pattern>
+  </servlet-mapping>
+    <servlet>
+        <servlet-name>GoodsListServlet</servlet-name>
+        <servlet-class>controller.GoodsListServlet</servlet-class>
+    </servlet>
+  <servlet-mapping>
+      <servlet-name>GoodsListServlet</servlet-name>
+      <url-pattern>/getGoodsList</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,2 @@
+FROM tomcat
+EXPOSE 8080
